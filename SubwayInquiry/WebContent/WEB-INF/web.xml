@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SubwayInquiry</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TimeTableAction</display-name>
+    <servlet-name>TimeTableAction</servlet-name>
+    <servlet-class>com.subway.action.TimeTableAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TimeTableAction</servlet-name>
+    <url-pattern>/TimeTableAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StationExitInfoAction</display-name>
+    <servlet-name>StationExitInfoAction</servlet-name>
+    <servlet-class>com.subway.action.StationExitInfoAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StationExitInfoAction</servlet-name>
+    <url-pattern>/StationExitInfoAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TransMessageAction</display-name>
+    <servlet-name>TransMessageAction</servlet-name>
+    <servlet-class>com.subway.action.TransMessageAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransMessageAction</servlet-name>
+    <url-pattern>/TransMessageAction</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,1 @@
+由 CoreServlet.java（extends from Servlet） 接收微信服务器的请求，转发至 CoreService.java 做处理。
